@@ -1,6 +1,8 @@
 # spectrefenix
 ## Spectre-Speedmaster style watchface for Fenix 6 Sapphire 
-With date and battery indicator that move with the hands - always being on the opposite side for readability
+With date and battery indicator that move with the hands - always being on the opposite side for readability.
+
+!! Only tested with Fenix 6 Pro/Sapphire, should work with Fenix 6 line but no guarantees !!
 
 
 
