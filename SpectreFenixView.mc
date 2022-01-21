@@ -8,7 +8,9 @@ import Toybox.Time;
 
 class SpectreFenixView extends WatchUi.WatchFace {
 
-	var myBitmap;
+	// Compute a scaler value to multiply all constants with, to be able to transfer the scale correctly between (round-face) models withn different screen resolutions
+	// var scale_to_fenix = dc.getWidth/260;
+	
 
     function initialize() {
         WatchFace.initialize();
@@ -17,7 +19,6 @@ class SpectreFenixView extends WatchUi.WatchFace {
     // Load your resources here
     function onLayout(dc as Dc) as Void {
         setLayout(Rez.Layouts.WatchFace(dc));
-        // myBitmap = WatchUi.loadResource(Rez.Drawables.OmegaFace);
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -49,10 +50,11 @@ class SpectreFenixView extends WatchUi.WatchFace {
     //! Draws the clock tick marks around the outside edges of the screen.
     //! @param dc Device context
     private function drawHashMarks(dc as Dc, count as Number, skip as Number) as Void {
+    	var scale_to_fenix = dc.getWidth().toFloat()/260;
         var width = dc.getWidth();
         var height = dc.getHeight();
         var outerRad = width / 2;
-        var innerRad = outerRad - 25;
+        var innerRad = outerRad - 25 * scale_to_fenix;
         for (var i = 1; i <= count; i += 1) {
 	        if (i % skip != 0){
 	            var angle = i * (Math.PI/count)*2;
@@ -66,38 +68,45 @@ class SpectreFenixView extends WatchUi.WatchFace {
     }
 
     private function drawMainNumbers(dc as Dc) as Void {
+    	var scale_to_fenix = dc.getWidth().toFloat()/260;
         var width = dc.getWidth();
         var height = dc.getHeight();
         var outerRad = width / 2;
-        var innerRad = outerRad - 25;
-		var distfromside = 45;
-		var textheight = 29;	
-
+        var innerRad = outerRad - 25 * scale_to_fenix;
+		var distfromside = 45 * scale_to_fenix;
+		var textheight = 29 * scale_to_fenix;	
 		
-		dc.drawText(130, 260-distfromside-textheight, Graphics.FONT_NUMBER_MILD, 6, Graphics.TEXT_JUSTIFY_CENTER);
-		dc.drawText(260-distfromside, 130-textheight, Graphics.FONT_NUMBER_MILD, 3, Graphics.TEXT_JUSTIFY_CENTER);
-		dc.drawText(distfromside, 130-textheight, Graphics.FONT_NUMBER_MILD, 9, Graphics.TEXT_JUSTIFY_CENTER);
+
+		dc.drawText(width/2, width-distfromside-textheight, Graphics.FONT_NUMBER_MILD, 6, Graphics.TEXT_JUSTIFY_CENTER);
+		dc.drawText(width-distfromside, width/2-textheight, Graphics.FONT_NUMBER_MILD, 3, Graphics.TEXT_JUSTIFY_CENTER);
+		dc.drawText(distfromside, width/2-textheight, Graphics.FONT_NUMBER_MILD, 9, Graphics.TEXT_JUSTIFY_CENTER);
 
 		//dc.drawText(130, distfromside-textheight, Graphics.FONT_NUMBER_MILD, 12, Graphics.TEXT_JUSTIFY_CENTER);
 		
-		var triangle_width = 18;
-		var triangle_height = 28;
-		var triangle_spacer = -14;
-		var triangle_eye_rad = 5;
+		
+		
+		var triangle_width = 18 * scale_to_fenix;
+		var triangle_height = 28 * scale_to_fenix;
+		var triangle_spacer = -14 * scale_to_fenix;
+		var triangle_eye_rad = 5 * scale_to_fenix;
 		
 		//dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
-		dc.fillPolygon([[130, distfromside + triangle_spacer],[130 - triangle_width, distfromside + triangle_spacer + triangle_height],[130 + triangle_width, distfromside + triangle_spacer + triangle_height]]);
-	    dc.fillCircle(130 - triangle_eye_rad - 9, distfromside + triangle_spacer + 3, triangle_eye_rad);
-	    dc.fillCircle(130 + triangle_eye_rad + 9, distfromside + triangle_spacer + 3, triangle_eye_rad);
+		dc.fillPolygon([[width/2, distfromside + triangle_spacer],[width/2 - triangle_width, distfromside + triangle_spacer + triangle_height],[width/2 + triangle_width, distfromside + triangle_spacer + triangle_height]]);
+	    dc.fillCircle(width/2 - triangle_eye_rad - 9*scale_to_fenix, distfromside + triangle_spacer + 3, triangle_eye_rad);
+	    dc.fillCircle(width/2 + triangle_eye_rad + 9*scale_to_fenix, distfromside + triangle_spacer + 3, triangle_eye_rad);
 
     }
 
     private function drawMainTriangles(dc as Dc, count as Number, skipper as Number, thickness as Number, shortener as Number) as Void {
+    	var scale_to_fenix = dc.getWidth().toFloat()/260;
         var width = dc.getWidth();
         var height = dc.getHeight();
+        
+        thickness = thickness * scale_to_fenix;
+        shortener = shortener * scale_to_fenix;
 
         var outerRad = (width) / 2;
-        var innerRad = outerRad - 20 + shortener;
+        var innerRad = outerRad - 20*scale_to_fenix + shortener;
 
         for (var i = 0; i < count; i += 1) {
         	if (skipper == 0 ||  i % skipper != 0){
@@ -106,11 +115,11 @@ class SpectreFenixView extends WatchUi.WatchFace {
 	            var sY = outerRad + innerRad * Math.sin(angle);
 	            var sX = outerRad + innerRad * Math.cos(angle);
 	
-	            var eY_u = outerRad + (outerRad + 10) * Math.sin(angle) + thickness * Math.cos(angle);
-	            var eX_u = outerRad + (outerRad + 10) * Math.cos(angle) + thickness * Math.sin(angle);
+	            var eY_u = outerRad + (outerRad + 10*scale_to_fenix) * Math.sin(angle) + thickness * Math.cos(angle);
+	            var eX_u = outerRad + (outerRad + 10*scale_to_fenix) * Math.cos(angle) + thickness * Math.sin(angle);
 	            
-	            var eY_l = outerRad + (outerRad + 10) * Math.sin(angle) - thickness * Math.cos(angle);
-	            var eX_l = outerRad + (outerRad + 10) * Math.cos(angle) - thickness * Math.sin(angle);
+	            var eY_l = outerRad + (outerRad + 10*scale_to_fenix) * Math.sin(angle) - thickness * Math.cos(angle);
+	            var eX_l = outerRad + (outerRad + 10*scale_to_fenix) * Math.cos(angle) - thickness * Math.sin(angle);
 	
 	            dc.fillPolygon([[sY, sX],[eY_u, eX_u],[eY_l, eX_l]]);
             }
@@ -120,6 +129,13 @@ class SpectreFenixView extends WatchUi.WatchFace {
 
 	function drawHand(dc, angle, length, width)
 	{
+		// Scale numbers with fenix scalar, so that arguments can follow fenix inputs
+		var scale_to_fenix = dc.getWidth/260;
+		
+		length = length * scale_to_fenix;
+		width = width * scale_to_fenix;
+		
+		
 		// Map out the coordinates of the watch hand
 		var coords = [ [-(width/2),0], [-(width/2), -length], [width/2, -length], [width/2, 0] ];
 		var result = new [4];
@@ -144,11 +160,10 @@ class SpectreFenixView extends WatchUi.WatchFace {
 
     // Update the view
     function onUpdate(dc as Dc) as Void {
-        // Get and show the current time
+		var scale_to_fenix = dc.getWidth().toFloat()/260;
+    
+        // Get current time
         var clockTime = System.getClockTime();
-        //var timeString = Lang.format("$1$:$2$", [clockTime.hour, clockTime.min.format("%02d")]);
-        //var view = View.findDrawableById("TimeDisplay") as Text;
-        //view.setText(timeString);
 
 		// Battery count
 		var myStats = System.getSystemStats();
@@ -156,37 +171,33 @@ class SpectreFenixView extends WatchUi.WatchFace {
         var batView = View.findDrawableById("BatteryDisplay") as Text;
         //batView.setText(batStr);
 
-		// Step count
-		//var stepStr = Lang.format( "$1$", [ ActivityMonitor.getInfo().steps] );
-        //var stepView = View.findDrawableById("StepCountDisplay") as Text;
-        //stepView.setText(stepStr);
-        
         // Date
         var info = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
         var dateStr = Lang.format("$1$/$2$", [info.day, info.month]);
         var dateView = View.findDrawableById("DateDisplay") as Text;
-        //dateView .setText(dateStr);
+  
 
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
 
+
 		// Draw the tick marks around the edges of the screen
+		dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
         drawHashMarks(dc, 60, 5);
         drawMainNumbers(dc);
         
         // Drawing the center circle and triangles around the dial
         dc.setColor(Graphics.COLOR_LT_GRAY,Graphics.COLOR_TRANSPARENT);
-        var minusradius = -10;
 
-        
+        var minusradius = -10*scale_to_fenix;
+
         dc.setColor(Graphics.COLOR_ORANGE, Graphics.COLOR_TRANSPARENT);
-        drawMainTriangles(dc, 4, 0, 15, 0); // Count, skipper, thickness, shortener
-        drawMainTriangles(dc, 12, 3, 12, -16);
+        drawMainTriangles(dc, 4, 0, 15, 0); // Count, skipper, thickness, shortener - all are scaled to fenix inside the function
+        drawMainTriangles(dc, 12, 3, 12, -16); // Count, skipper, thickness, shortener - all are scaled to fenix inside the function
 		
 		
 		
 		// Use white to draw the hour and minute hands
-        //dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
 		dc.setColor(Graphics.COLOR_LT_GRAY,Graphics.COLOR_TRANSPARENT);
 
         // Draw the hour hand. Convert it to minutes and compute the angle.
@@ -194,57 +205,50 @@ class SpectreFenixView extends WatchUi.WatchFace {
         hourHandAngle = hourHandAngle / (12 * 60.0);
         hourHandAngle = hourHandAngle * Math.PI * 2;
 	    var minuteHandAngle = (clockTime.min / 60.0) * Math.PI * 2;
-	    
-	    //var finHandAngle = (((clockTime.hour % 12 - 6) * 60) + clockTime.min);
-        //finHandAngle = finHandAngle / (12 * 60.0);
-        //finHandAngle = finHandAngle * Math.PI * 2;
         
         // Hour hand base silver
         dc.setColor(Graphics.COLOR_LT_GRAY,Graphics.COLOR_TRANSPARENT);
-        dc.fillPolygon(generateHandCoordinates([130, 130], hourHandAngle, 80, minusradius, 18, 5));
-       	var arrowstart = 70;
+        dc.fillPolygon(generateHandCoordinates([dc.getWidth()/2, dc.getWidth()/2], hourHandAngle, 80*scale_to_fenix, minusradius, 18*scale_to_fenix, 5*scale_to_fenix));
+       	var arrowstart = 70*scale_to_fenix;
        	
 		// Arrow silver bit       	
-        dc.fillPolygon(generateHandCoordinates([130, 130], hourHandAngle, 90, -arrowstart+4, 24, 3));
+        dc.fillPolygon(generateHandCoordinates([dc.getWidth()/2, dc.getWidth()/2], hourHandAngle, 90*scale_to_fenix, -arrowstart + 4*scale_to_fenix, 24*scale_to_fenix, 3*scale_to_fenix));
         
         dc.setColor(Graphics.COLOR_ORANGE,Graphics.COLOR_TRANSPARENT);
-        // Hour hand lume
-        // dc.fillPolygon(generateHandCoordinates([130, 130], hourHandAngle, 80, minusradius, 9, 3));
 
 		// Arrow lume
-        dc.fillPolygon(generateHandCoordinates([130, 130], hourHandAngle, 83, -arrowstart, 14, 1));
+        dc.fillPolygon(generateHandCoordinates([dc.getWidth()/2, dc.getWidth()/2], hourHandAngle, 83*scale_to_fenix, -arrowstart, 14*scale_to_fenix, 1*scale_to_fenix));
         
         // Minute Hand
         dc.setColor(Graphics.COLOR_LT_GRAY,Graphics.COLOR_TRANSPARENT);
-        dc.fillPolygon(generateHandCoordinates([130, 130], minuteHandAngle, 125, minusradius, 12, 3));
-        //dc.fillPolygon(generateHandCoordinates([130, 130], finHandAngle, 60, minusradius, 15, 4));     
+        dc.fillPolygon(generateHandCoordinates([dc.getWidth()/2, dc.getWidth()/2], minuteHandAngle, 125*scale_to_fenix, minusradius, 12*scale_to_fenix, 3*scale_to_fenix));     
         dc.setColor(Graphics.COLOR_ORANGE,Graphics.COLOR_TRANSPARENT);
-        dc.fillPolygon(generateHandCoordinates([130, 130], minuteHandAngle, 115, minusradius, 6, 1));
-        //dc.fillPolygon(generateHandCoordinates([130, 130], finHandAngle, 50, minusradius, 6, 1));     
+        dc.fillPolygon(generateHandCoordinates([dc.getWidth()/2, dc.getWidth()/2], minuteHandAngle, 115*scale_to_fenix, minusradius, 6*scale_to_fenix, 1*scale_to_fenix));
 	    
-
+	    // Center dot
 	    dc.setColor(Graphics.COLOR_LT_GRAY,Graphics.COLOR_TRANSPARENT);
-	    dc.fillCircle(260/ 2, 260 / 2, -minusradius+3);
+	    dc.fillCircle(dc.getWidth()/2, dc.getWidth()/2, -minusradius + 3*scale_to_fenix);
 	    dc.setColor(Graphics.COLOR_BLACK,Graphics.COLOR_TRANSPARENT);
-	    dc.drawCircle(260/ 2, 260 / 2, -minusradius+3);
+	    dc.drawCircle(dc.getWidth()/2, dc.getWidth()/2, -minusradius + 3 * scale_to_fenix);
 	    
 	    // Compute location for date - average angle of hour/minute - PI
 	    dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
-	    var textrad = 260/2;
-	    var textdist = 87;
+	    var textrad = dc.getWidth()/2;
+	    var textdist = 87*scale_to_fenix;
 	    var textangle = (hourHandAngle + minuteHandAngle )/2;
 	    if ((hourHandAngle - minuteHandAngle).abs() < Math.PI){ textangle = textangle + Math.PI; } 
 	    
 	    textangle = textangle - Math.PI/2;
         var sY = textrad + (textrad - textdist ) * Math.sin(textangle);
         var sX = textrad + (textrad - textdist ) * Math.cos(textangle);
-	    dc.drawText(sX, sY+2, Graphics.FONT_TINY, batStr, Graphics.TEXT_JUSTIFY_CENTER);
-	    dc.drawText(sX, sY-18, Graphics.FONT_TINY, dateStr, Graphics.TEXT_JUSTIFY_CENTER);
+	    dc.drawText(sX, sY + 2*scale_to_fenix, Graphics.FONT_TINY, batStr, Graphics.TEXT_JUSTIFY_CENTER);
+	    dc.drawText(sX, sY - 18*scale_to_fenix, Graphics.FONT_TINY, dateStr, Graphics.TEXT_JUSTIFY_CENTER);
 	    
 	    
 	    //onPartialUpdate(dc, minusradius);
     }
     
+    // NOT used 
    	function onPartialUpdatePLACEHOLDER(dc as Dc, minusradius as Number) as Void {
 	   	var clockTime = System.getClockTime();
         var secondAngle = clockTime.sec;
@@ -285,3 +289,4 @@ class SpectreFenixView extends WatchUi.WatchFace {
     }
 
 }
+
