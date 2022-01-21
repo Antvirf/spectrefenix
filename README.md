@@ -9,7 +9,7 @@
 
 
 ## Direct install
-For the directly usable watch-face, download the *SpectreFenix-main.prg* and copy it to your watch/GARMIN/APPS/ directory.
+For the directly usable watchface, download the *SpectreFenix-main.prg* (Fenix 6 / older version) or *SpectreRunmaster.prg* (Venu 2 / 'general' version) and copy it to your watch/GARMIN/APPS/ directory.
 
 
 # Source code
