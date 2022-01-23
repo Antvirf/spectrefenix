@@ -1,15 +1,15 @@
-# Spectre Fenix / Spectre "Runmaster:
-## Spectre-Speedmaster style watchface for Fenix 6 Sapphire
-(Additionally called runmaster, since should work on other watches as well)
+# Spectre "Runmaster"
+## 007 Spectre Omega Speedmaster style watchface
 
 * With date and battery indicator that move with the hands - always being on the opposite side for readability.
 * So far tested physically with:
   * Fenix 6 Pro / Sapphire
 
+Pending Garmin review on connect IQ store, should be available shortly.
 
 
 ## Direct install
-For the directly usable watchface, download the *SpectreFenix-main.prg* (Fenix 6 / older version) or *SpectreRunmaster.prg* (Venu 2 / 'general' version) and copy it to your watch/GARMIN/APPS/ directory.
+For the directly usable watchface, download the *.prg* file (Fenix 6 / older version) or *SpectreRunmaster.prg* (Venu 2 specific) and copy it to your watch/GARMIN/APPS/ directory.
 
 
 # Source code
