@@ -1,0 +1,40 @@
+<resources>
+
+<properties>
+	<property id="top_complication" type="number">0</property>
+	<property id="bot_complication" type="number">1</property>
+</properties>
+
+<strings>
+	<string id="complication_title_top">Top field</string>
+	<string id="complication_title_bot">Bottom field</string>
+	<string id="date">Date</string>
+	<string id="battery">Battery %</string>
+	<string id="heartrate">Heartrate</string>
+	<string id="steps">Today's steps</string>
+	<string id="blank">Blank</string>
+</strings>
+
+<settings>
+	<setting propertyKey="@Properties.top_complication" title="@Strings.complication_title_top">
+		<settingConfig type="list">
+			<listEntry value="0">@Strings.date</listEntry>
+			<listEntry value="1">@Strings.battery</listEntry>
+			<listEntry value="2">@Strings.heartrate</listEntry>
+			<listEntry value="3">@Strings.steps</listEntry>
+			<listEntry value="4">@Strings.blank</listEntry>
+		</settingConfig>
+	</setting>
+	
+	<setting propertyKey="@Properties.bot_complication" title="@Strings.complication_title_bot">
+		<settingConfig type="list">
+			<listEntry value="0">@Strings.date</listEntry>
+			<listEntry value="1">@Strings.battery</listEntry>
+			<listEntry value="2">@Strings.heartrate</listEntry>
+			<listEntry value="3">@Strings.steps</listEntry>
+			<listEntry value="4">@Strings.blank</listEntry>
+		</settingConfig>
+	</setting>
+</settings>
+
+</resources>
