@@ -10,8 +10,8 @@
         <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3App.mc" id="4" lineNum="21" parent="globals/SpectreRunmaster3App" pc="268435493" symbol="getInitialView"/>
         <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3App.mc" id="5" lineNum="25" parent="globals/SpectreRunmaster3App" pc="268435531" symbol="onSettingsChanged"/>
         <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3App.mc" id="5" lineNum="26" parent="globals/SpectreRunmaster3App" pc="268435535" symbol="onSettingsChanged"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3App.mc" id="6" lineNum="5" parent="globals/SpectreRunmaster3App" pc="268440109" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3App.mc" id="6" lineNum="5" parent="globals/SpectreRunmaster3App" pc="268440109" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3App.mc" id="6" lineNum="5" parent="globals/SpectreRunmaster3App" pc="268440345" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3App.mc" id="6" lineNum="5" parent="globals/SpectreRunmaster3App" pc="268440345" symbol="&lt;init&gt;"/>
         <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3App.mc" id="7" lineNum="31" parent="globals" pc="268435552" symbol="getApp"/>
         <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3App.mc" id="7" lineNum="32" parent="globals" pc="268435564" symbol="getApp"/>
         <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="9" lineNum="15" parent="globals/SpectreRunmaster3View" pc="268435581" symbol="initialize"/>
@@ -132,67 +132,81 @@
         <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="226" parent="globals/SpectreRunmaster3View" pc="268438625" symbol="onUpdate"/>
         <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="227" parent="globals/SpectreRunmaster3View" pc="268438651" symbol="onUpdate"/>
         <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="228" parent="globals/SpectreRunmaster3View" pc="268438687" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="232" parent="globals/SpectreRunmaster3View" pc="268438723" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="236" parent="globals/SpectreRunmaster3View" pc="268438759" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="238" parent="globals/SpectreRunmaster3View" pc="268438776" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="239" parent="globals/SpectreRunmaster3View" pc="268438807" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="240" parent="globals/SpectreRunmaster3View" pc="268438817" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="241" parent="globals/SpectreRunmaster3View" pc="268438840" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="245" parent="globals/SpectreRunmaster3View" pc="268438875" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="246" parent="globals/SpectreRunmaster3View" pc="268438885" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="247" parent="globals/SpectreRunmaster3View" pc="268438895" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="250" parent="globals/SpectreRunmaster3View" pc="268438931" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="257" parent="globals/SpectreRunmaster3View" pc="268439008" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="264" parent="globals/SpectreRunmaster3View" pc="268439100" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="272" parent="globals/SpectreRunmaster3View" pc="268439177" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="275" parent="globals/SpectreRunmaster3View" pc="268439203" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="282" parent="globals/SpectreRunmaster3View" pc="268439286" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="291" parent="globals/SpectreRunmaster3View" pc="268439363" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="292" parent="globals/SpectreRunmaster3View" pc="268439399" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="293" parent="globals/SpectreRunmaster3View" pc="268439432" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="294" parent="globals/SpectreRunmaster3View" pc="268439468" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="298" parent="globals/SpectreRunmaster3View" pc="268439501" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="299" parent="globals/SpectreRunmaster3View" pc="268439538" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="302" parent="globals/SpectreRunmaster3View" pc="268439575" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="303" parent="globals/SpectreRunmaster3View" pc="268439590" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="307" parent="globals/SpectreRunmaster3View" pc="268439605" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="308" parent="globals/SpectreRunmaster3View" pc="268439641" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="309" parent="globals/SpectreRunmaster3View" pc="268439645" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="310" parent="globals/SpectreRunmaster3View" pc="268439655" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="311" parent="globals/SpectreRunmaster3View" pc="268439668" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="311" parent="globals/SpectreRunmaster3View" pc="268439698" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="313" parent="globals/SpectreRunmaster3View" pc="268439718" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="314" parent="globals/SpectreRunmaster3View" pc="268439741" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="315" parent="globals/SpectreRunmaster3View" pc="268439769" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="316" parent="globals/SpectreRunmaster3View" pc="268439797" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="317" parent="globals/SpectreRunmaster3View" pc="268439848" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="19" lineNum="326" parent="globals/SpectreRunmaster3View" pc="268439900" symbol="onHide"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="20" lineNum="330" parent="globals/SpectreRunmaster3View" pc="268439905" symbol="onExitSleep"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="21" lineNum="334" parent="globals/SpectreRunmaster3View" pc="268439910" symbol="onEnterSleep"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="22" lineNum="13" parent="globals/SpectreRunmaster3View" pc="268440128" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="22" lineNum="13" parent="globals/SpectreRunmaster3View" pc="268440128" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="24" lineNum="2" parent="globals/Rez/Drawables" pc="268440171" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="25" lineNum="6" parent="globals/Rez/Fonts" pc="268440173" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="26" lineNum="8" parent="globals/Rez/JsonData" pc="268440175" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="27" lineNum="17" parent="globals/Rez/Layouts" pc="268439915" symbol="WatchFace"/>
-        <entry filename="Rez" id="27" lineNum="19" parent="globals/Rez/Layouts" pc="268439927" symbol="WatchFace"/>
-        <entry filename="Rez" id="27" lineNum="21" parent="globals/Rez/Layouts" pc="268440090" symbol="WatchFace"/>
-        <entry filename="Rez" id="28" lineNum="10" parent="globals/Rez/Layouts" pc="268440174" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="29" lineNum="26" parent="globals/Rez/Menus" pc="268440172" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="30" lineNum="28" parent="globals/Rez/Strings" pc="268440176" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="31" lineNum="1" parent="globals/Rez" pc="268440147" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="31" lineNum="1" parent="globals/Rez" pc="268440147" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="233" parent="globals/SpectreRunmaster3View" pc="268438723" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="234" parent="globals/SpectreRunmaster3View" pc="268438740" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="235" parent="globals/SpectreRunmaster3View" pc="268438771" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="236" parent="globals/SpectreRunmaster3View" pc="268438781" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="237" parent="globals/SpectreRunmaster3View" pc="268438804" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="240" parent="globals/SpectreRunmaster3View" pc="268438839" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="241" parent="globals/SpectreRunmaster3View" pc="268438876" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="242" parent="globals/SpectreRunmaster3View" pc="268438913" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="245" parent="globals/SpectreRunmaster3View" pc="268438950" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="246" parent="globals/SpectreRunmaster3View" pc="268438965" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="249" parent="globals/SpectreRunmaster3View" pc="268438980" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="250" parent="globals/SpectreRunmaster3View" pc="268439016" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="251" parent="globals/SpectreRunmaster3View" pc="268439020" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="252" parent="globals/SpectreRunmaster3View" pc="268439030" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="255" parent="globals/SpectreRunmaster3View" pc="268439043" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="257" parent="globals/SpectreRunmaster3View" pc="268439153" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="258" parent="globals/SpectreRunmaster3View" pc="268439166" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="258" parent="globals/SpectreRunmaster3View" pc="268439196" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="259" parent="globals/SpectreRunmaster3View" pc="268439216" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="260" parent="globals/SpectreRunmaster3View" pc="268439239" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="262" parent="globals/SpectreRunmaster3View" pc="268439242" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="263" parent="globals/SpectreRunmaster3View" pc="268439262" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="265" parent="globals/SpectreRunmaster3View" pc="268439265" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="266" parent="globals/SpectreRunmaster3View" pc="268439272" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="268" parent="globals/SpectreRunmaster3View" pc="268439275" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="269" parent="globals/SpectreRunmaster3View" pc="268439295" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="271" parent="globals/SpectreRunmaster3View" pc="268439298" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="272" parent="globals/SpectreRunmaster3View" pc="268439312" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="275" parent="globals/SpectreRunmaster3View" pc="268439315" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="276" parent="globals/SpectreRunmaster3View" pc="268439343" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="277" parent="globals/SpectreRunmaster3View" pc="268439371" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="278" parent="globals/SpectreRunmaster3View" pc="268439422" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="283" parent="globals/SpectreRunmaster3View" pc="268439473" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="286" parent="globals/SpectreRunmaster3View" pc="268439509" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="287" parent="globals/SpectreRunmaster3View" pc="268439519" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="288" parent="globals/SpectreRunmaster3View" pc="268439529" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="291" parent="globals/SpectreRunmaster3View" pc="268439565" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="298" parent="globals/SpectreRunmaster3View" pc="268439642" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="305" parent="globals/SpectreRunmaster3View" pc="268439734" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="313" parent="globals/SpectreRunmaster3View" pc="268439811" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="316" parent="globals/SpectreRunmaster3View" pc="268439837" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="323" parent="globals/SpectreRunmaster3View" pc="268439920" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="330" parent="globals/SpectreRunmaster3View" pc="268439997" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="331" parent="globals/SpectreRunmaster3View" pc="268440033" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="332" parent="globals/SpectreRunmaster3View" pc="268440066" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="18" lineNum="333" parent="globals/SpectreRunmaster3View" pc="268440102" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="19" lineNum="342" parent="globals/SpectreRunmaster3View" pc="268440136" symbol="onHide"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="20" lineNum="346" parent="globals/SpectreRunmaster3View" pc="268440141" symbol="onExitSleep"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="21" lineNum="350" parent="globals/SpectreRunmaster3View" pc="268440146" symbol="onEnterSleep"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="22" lineNum="13" parent="globals/SpectreRunmaster3View" pc="268440364" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\zAnti\\eclipse-workspace\\SpectreRunmaster3\\source\\SpectreRunmaster3View.mc" id="22" lineNum="13" parent="globals/SpectreRunmaster3View" pc="268440364" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="24" lineNum="2" parent="globals/Rez/Drawables" pc="268440407" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="25" lineNum="6" parent="globals/Rez/Fonts" pc="268440409" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="26" lineNum="8" parent="globals/Rez/JsonData" pc="268440411" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="27" lineNum="17" parent="globals/Rez/Layouts" pc="268440151" symbol="WatchFace"/>
+        <entry filename="Rez" id="27" lineNum="19" parent="globals/Rez/Layouts" pc="268440163" symbol="WatchFace"/>
+        <entry filename="Rez" id="27" lineNum="21" parent="globals/Rez/Layouts" pc="268440326" symbol="WatchFace"/>
+        <entry filename="Rez" id="28" lineNum="10" parent="globals/Rez/Layouts" pc="268440410" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="29" lineNum="26" parent="globals/Rez/Menus" pc="268440408" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="30" lineNum="28" parent="globals/Rez/Strings" pc="268440412" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="31" lineNum="1" parent="globals/Rez" pc="268440383" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="31" lineNum="1" parent="globals/Rez" pc="268440383" symbol="&lt;init&gt;"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry field="true" id="21" symbol="rotate"/>
         <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
         <entry id="4" module="true" symbol="globals/Rez/Menus"/>
         <entry id="13" method="true" symbol="&lt;globals/SpectreRunmaster3View/&lt;&gt;drawMainNumbers&gt;"/>
         <entry id="8389683" method="true" symbol="onSettingsChanged"/>
+        <entry field="true" id="27" symbol="three"/>
         <entry id="8388924" module="true" symbol="Gregorian"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-        <entry field="true" id="24" symbol="complication_title_bot"/>
-        <entry field="true" id="25" symbol="AppName"/>
+        <entry field="true" id="31" symbol="complication_title_bot"/>
+        <entry field="true" id="28" symbol="AppName"/>
         <entry id="8388633" module="true" symbol="ActivityMonitor"/>
         <entry field="true" id="20" symbol="date"/>
         <entry id="8" module="true" symbol="globals/Rez/Strings"/>
@@ -200,6 +214,7 @@
         <entry field="true" id="8388724" symbol="battery"/>
         <entry field="true" id="8388912" symbol="steps"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry field="true" id="30" symbol="complication_title_location"/>
         <entry id="2" module="true" symbol="globals/Rez"/>
         <entry id="8389124" method="true" symbol="onUpdate"/>
         <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
@@ -211,16 +226,19 @@
         <entry id="18" module="true" symbol="Menus"/>
         <entry id="8389275" method="true" symbol="getApp"/>
         <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
-        <entry field="true" id="23" symbol="complication_title_top"/>
+        <entry field="true" id="26" symbol="complication_title_top"/>
         <entry id="8389122" method="true" symbol="onLayout"/>
         <entry id="8389376" method="true" symbol="onEnterSleep"/>
         <entry field="true" id="8389063" symbol="identifier"/>
-        <entry field="true" id="21" symbol="blank"/>
+        <entry field="true" id="23" symbol="blank"/>
+        <entry field="true" id="24" symbol="six"/>
         <entry id="8389349" symbol="justification"/>
+        <entry field="true" id="29" symbol="twelve"/>
         <entry id="7" module="true" symbol="globals/Rez/JsonData"/>
         <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry field="true" id="22" symbol="nine"/>
         <entry id="8389809" symbol="order"/>
-        <entry field="true" id="22" symbol="heartrate"/>
+        <entry field="true" id="25" symbol="heartrate"/>
         <entry id="8389377" method="true" symbol="onExitSleep"/>
         <entry id="8388644" module="true" symbol="System"/>
         <entry id="8388645" module="true" symbol="Time"/>
@@ -334,37 +352,44 @@
         <entry endPc="268438460" name="batView" stackId="7" startPc="268437879"/>
         <entry endPc="268438460" name="hrStr" stackId="8" startPc="268437879"/>
         <entry arg="true" endPc="268438461" name="input_string" stackId="1" startPc="268437873"/>
-        <entry endPc="268439898" name="textangle" stackId="16" startPc="268438466"/>
-        <entry endPc="268439898" name="sY" stackId="17" startPc="268438466"/>
-        <entry endPc="268439898" name="minusradius" stackId="8" startPc="268438466"/>
-        <entry endPc="268439898" name="sX" stackId="18" startPc="268438466"/>
-        <entry endPc="268439898" name="minuteHandAngle" stackId="7" startPc="268438466"/>
-        <entry endPc="268439898" name="clockTime" stackId="5" startPc="268438466"/>
-        <entry endPc="268439898" name="scale_to_fenix" stackId="3" startPc="268438466"/>
-        <entry endPc="268439898" name="textdist" stackId="15" startPc="268438466"/>
-        <entry endPc="268439898" name="bottom_complication" stackId="13" startPc="268438466"/>
-        <entry endPc="268439898" name="param_2_setting" stackId="11" startPc="268438466"/>
-        <entry endPc="268439898" name="arrowstart" stackId="9" startPc="268438466"/>
-        <entry endPc="268439898" name="hand_coord_centre" stackId="4" startPc="268438466"/>
-        <entry endPc="268439898" name="lume_color" stackId="2" startPc="268438466"/>
-        <entry endPc="268439898" name="hourHandAngle" stackId="6" startPc="268438466"/>
-        <entry endPc="268439898" name="param_1_setting" stackId="10" startPc="268438466"/>
-        <entry endPc="268439898" name="textrad" stackId="14" startPc="268438466"/>
-        <entry endPc="268439898" name="top_complication" stackId="12" startPc="268438466"/>
-        <entry arg="true" endPc="268439899" name="dc" stackId="1" startPc="268438462"/>
-        <entry endPc="268440106" name="rez_cmp_local_text_TimeLabel" stackId="2" startPc="268439927"/>
-        <entry arg="true" endPc="268440107" name="dc" stackId="1" startPc="268439915"/>
+        <entry endPc="268440134" name="textangle" stackId="15" startPc="268438466"/>
+        <entry endPc="268440134" name="arrowstart" stackId="19" startPc="268438466"/>
+        <entry endPc="268440134" name="textrad" stackId="13" startPc="268438466"/>
+        <entry endPc="268440134" name="top_complication" stackId="11" startPc="268438466"/>
+        <entry endPc="268440134" name="sY" stackId="16" startPc="268438466"/>
+        <entry endPc="268440134" name="hourHandAngle" stackId="6" startPc="268438466"/>
+        <entry endPc="268440134" name="sX" stackId="17" startPc="268438466"/>
+        <entry endPc="268440134" name="textdist" stackId="14" startPc="268438466"/>
+        <entry endPc="268440134" name="minuteHandAngle" stackId="7" startPc="268438466"/>
+        <entry endPc="268440134" name="minusradius" stackId="18" startPc="268438466"/>
+        <entry endPc="268440134" name="param_2_setting" stackId="9" startPc="268438466"/>
+        <entry endPc="268440134" name="clockTime" stackId="5" startPc="268438466"/>
+        <entry endPc="268440134" name="param_1_setting" stackId="8" startPc="268438466"/>
+        <entry endPc="268440134" name="scale_to_fenix" stackId="3" startPc="268438466"/>
+        <entry endPc="268440134" name="lume_color" stackId="2" startPc="268438466"/>
+        <entry endPc="268440134" name="bottom_complication" stackId="12" startPc="268438466"/>
+        <entry endPc="268440134" name="hand_coord_centre" stackId="4" startPc="268438466"/>
+        <entry endPc="268440134" name="complication_location" stackId="10" startPc="268438466"/>
+        <entry arg="true" endPc="268440135" name="dc" stackId="1" startPc="268438462"/>
+        <entry endPc="268440342" name="rez_cmp_local_text_TimeLabel" stackId="2" startPc="268440163"/>
+        <entry arg="true" endPc="268440343" name="dc" stackId="1" startPc="268440151"/>
     </localVars>
     <annotations>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="date"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="rotate"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="nine"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="blank"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="six"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="heartrate"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="complication_title_top"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="battery"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="steps"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="complication_title_bot"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="three"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="twelve"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="complication_title_location"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="complication_title_bot"/>
     </annotations>
     <dataEntryOffsetMappings>
         <dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
@@ -396,7 +421,7 @@
         <functionEntry accessMode="public" endPc="268435551" name="onSettingsChanged" parent="SpectreRunmaster3App" startPc="268435531">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268440127" name="&lt;init&gt;" parent="SpectreRunmaster3App" startPc="268440109">
+        <functionEntry accessMode="protected" endPc="268440363" name="&lt;init&gt;" parent="SpectreRunmaster3App" startPc="268440345">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" endPc="268435580" name="getApp" startPc="268435552">
@@ -454,45 +479,45 @@
             <param id="input_string"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439899" name="onUpdate" parent="SpectreRunmaster3View" startPc="268438462">
+        <functionEntry accessMode="public" endPc="268440135" name="onUpdate" parent="SpectreRunmaster3View" startPc="268438462">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439904" name="onHide" parent="SpectreRunmaster3View" startPc="268439900">
+        <functionEntry accessMode="public" endPc="268440140" name="onHide" parent="SpectreRunmaster3View" startPc="268440136">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439909" name="onExitSleep" parent="SpectreRunmaster3View" startPc="268439905">
+        <functionEntry accessMode="public" endPc="268440145" name="onExitSleep" parent="SpectreRunmaster3View" startPc="268440141">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439914" name="onEnterSleep" parent="SpectreRunmaster3View" startPc="268439910">
+        <functionEntry accessMode="public" endPc="268440150" name="onEnterSleep" parent="SpectreRunmaster3View" startPc="268440146">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268440146" name="&lt;init&gt;" parent="SpectreRunmaster3View" startPc="268440128">
+        <functionEntry accessMode="protected" endPc="268440382" name="&lt;init&gt;" parent="SpectreRunmaster3View" startPc="268440364">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268440171" name="&lt;init&gt;" parent="Drawables" startPc="268440171">
+        <functionEntry accessMode="protected" endPc="268440407" name="&lt;init&gt;" parent="Drawables" startPc="268440407">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268440173" name="&lt;init&gt;" parent="Fonts" startPc="268440173">
+        <functionEntry accessMode="protected" endPc="268440409" name="&lt;init&gt;" parent="Fonts" startPc="268440409">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268440175" name="&lt;init&gt;" parent="JsonData" startPc="268440175">
+        <functionEntry accessMode="protected" endPc="268440411" name="&lt;init&gt;" parent="JsonData" startPc="268440411">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440107" name="WatchFace" parent="Layouts" startPc="268439915">
+        <functionEntry accessMode="public" endPc="268440343" name="WatchFace" parent="Layouts" startPc="268440151">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268440174" name="&lt;init&gt;" parent="Layouts" startPc="268440174">
+        <functionEntry accessMode="protected" endPc="268440410" name="&lt;init&gt;" parent="Layouts" startPc="268440410">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268440172" name="&lt;init&gt;" parent="Menus" startPc="268440172">
+        <functionEntry accessMode="protected" endPc="268440408" name="&lt;init&gt;" parent="Menus" startPc="268440408">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268440176" name="&lt;init&gt;" parent="Strings" startPc="268440176">
+        <functionEntry accessMode="protected" endPc="268440412" name="&lt;init&gt;" parent="Strings" startPc="268440412">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268440170" name="&lt;init&gt;" parent="Rez" startPc="268440147">
+        <functionEntry accessMode="protected" endPc="268440406" name="&lt;init&gt;" parent="Rez" startPc="268440383">
             <documentation/>
         </functionEntry>
     </functions>

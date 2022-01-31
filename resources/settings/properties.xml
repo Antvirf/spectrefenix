@@ -3,19 +3,36 @@
 <properties>
 	<property id="top_complication" type="number">0</property>
 	<property id="bot_complication" type="number">1</property>
+	<property id="complication_location" type="number">0</property>
 </properties>
 
 <strings>
 	<string id="complication_title_top">Top field</string>
 	<string id="complication_title_bot">Bottom field</string>
+	<string id="complication_title_location">Datafield location</string>
 	<string id="date">Date</string>
 	<string id="battery">Battery %</string>
 	<string id="heartrate">Heartrate</string>
 	<string id="steps">Today's steps</string>
 	<string id="blank">Blank</string>
+	<string id="rotate">Rotate with hands</string>
+	<string id="twelve">12 o'clock</string>
+	<string id="three">3 o'clock</string>
+	<string id="six">6 o'clock</string>
+	<string id="nine">9 o'clock</string>
 </strings>
 
 <settings>
+	<setting propertyKey="@Properties.complication_location" title="@Strings.complication_title_location">
+		<settingConfig type="list">
+			<listEntry value="0">@Strings.rotate</listEntry>
+			<listEntry value="1">@Strings.twelve</listEntry>
+			<listEntry value="2">@Strings.three</listEntry>
+			<listEntry value="3">@Strings.six</listEntry>
+			<listEntry value="4">@Strings.nine</listEntry>
+		</settingConfig>
+	</setting>
+
 	<setting propertyKey="@Properties.top_complication" title="@Strings.complication_title_top">
 		<settingConfig type="list">
 			<listEntry value="0">@Strings.date</listEntry>
