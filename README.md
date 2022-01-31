@@ -2,15 +2,16 @@
 ## 007 Spectre Omega Speedmaster style watchface
 
 * With date and battery indicator that move with the hands - always being on the opposite side for readability.
+* The date/battery complications are configurable via the Garmin Connect App once the watch face has been installed via the store. Available options for either slot are date, battery %, heart rate, steps, and then ability to leave either one blank.
 * So far tested physically with:
   * Fenix 6 Pro / Sapphire
+  * Forerunner 935
+  * Venu 2
 
-Pending Garmin review on connect IQ store, should be available shortly.
 
 
 ## Direct install
-For the directly usable watchface, download the *.prg* file (Fenix 6 / older version) or *SpectreRunmaster.prg* (Venu 2 specific) and copy it to your watch/GARMIN/APPS/ directory.
-
+If you want to directly use the watchface, please head to the [Connect IQ page](https://apps.garmin.com/en-US/apps/904f5de7-2dc6-456f-9f5d-fc81dd47c53e)
 
 # Source code
-For the source, please refer to the .mc files. You need to set up an Eclipse environment with Garmin's SDK to edit/test/build the code.
+This repository contains the full Eclipse project for this watch face
