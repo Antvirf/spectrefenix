@@ -83,21 +83,29 @@ class SpectreRunmaster3View extends WatchUi.WatchFace {
 		dc.drawText(distfromside, width/2, Graphics.FONT_NUMBER_MILD, 9, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
 
 		
-		// Creating the pilot triangle at the top
-		var triangle_width = 18 * scale_to_fenix;
-		var triangle_height = 28 * scale_to_fenix;
-		var triangle_spacer = -14 * scale_to_fenix;
-		var triangle_eye_rad = 5 * scale_to_fenix;
+		var top_indicator = Application.getApp().Properties.getValue("top_numeric");
+		switch (top_indicator){
+			case 0:
+				// Creating the pilot triangle at the top
+				var triangle_width = 18 * scale_to_fenix;
+				var triangle_height = 28 * scale_to_fenix;
+				var triangle_spacer = -14 * scale_to_fenix;
+				var triangle_eye_rad = 5 * scale_to_fenix;
+				
+				dc.fillPolygon([
+					[width/2, distfromside + triangle_spacer],
+					[width/2 - triangle_width, distfromside + triangle_spacer + triangle_height],
+					[width/2 + triangle_width, distfromside + triangle_spacer + triangle_height]
+					]);
+					
+			    dc.fillCircle(width/2 - triangle_eye_rad - 9*scale_to_fenix, distfromside + triangle_spacer + 3, triangle_eye_rad);
+			    dc.fillCircle(width/2 + triangle_eye_rad + 9*scale_to_fenix, distfromside + triangle_spacer + 3, triangle_eye_rad);
+				break;
+			case 1:
+				dc.drawText(width/2, distfromside, Graphics.FONT_NUMBER_MILD, 12, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+				break;
+		}
 		
-		dc.fillPolygon([
-			[width/2, distfromside + triangle_spacer],
-			[width/2 - triangle_width, distfromside + triangle_spacer + triangle_height],
-			[width/2 + triangle_width, distfromside + triangle_spacer + triangle_height]
-			]);
-			
-	    dc.fillCircle(width/2 - triangle_eye_rad - 9*scale_to_fenix, distfromside + triangle_spacer + 3, triangle_eye_rad);
-	    dc.fillCircle(width/2 + triangle_eye_rad + 9*scale_to_fenix, distfromside + triangle_spacer + 3, triangle_eye_rad);
-
     }
 
     private function drawMainTriangles(dc as Dc, count as Number, skipper as Number, thickness as Number, shortener as Number, scale_to_fenix as Number) as Void {
@@ -227,19 +235,60 @@ class SpectreRunmaster3View extends WatchUi.WatchFace {
         drawMainTriangles(dc, 4, 0, 15, 0, scale_to_fenix); // Count, skipper, thickness, shortener - all are scaled to fenix inside the function
         drawMainTriangles(dc, 12, 3, 12, -16, scale_to_fenix); // Count, skipper, thickness, shortener - all are scaled to fenix inside the function
 		
-		
-		// Use white to draw the hour and minute hands
-		dc.setColor(Graphics.COLOR_LT_GRAY,Graphics.COLOR_TRANSPARENT);
-
+	    
         // Computing hand angles, convert time to minutes and compute the angle.
         // Get current time
         var clockTime = System.getClockTime();
-
         var hourHandAngle = (((clockTime.hour % 12) * 60) + clockTime.min);
         hourHandAngle = hourHandAngle / (12 * 60.0);
         hourHandAngle = hourHandAngle * Math.PI * 2;
 	    var minuteHandAngle = (clockTime.min / 60.0) * Math.PI * 2;
-        
+	    
+	    // Complications - get settings value
+    	var param_1_setting = Application.getApp().Properties.getValue("top_complication");
+    	var param_2_setting = Application.getApp().Properties.getValue("bot_complication");
+    	var complication_location = Application.getApp().Properties.getValue("complication_location");
+
+		// Compute the required string and save result
+		var top_complication = getComplicationString(param_1_setting);
+		var bottom_complication = getComplicationString(param_2_setting);
+	
+	    // Compute location for complication - average angle of hour/minute - PI
+	    dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
+	    var textrad = hand_coord_centre;
+	    var textdist = 90 * scale_to_fenix;
+	    var textangle = (hourHandAngle + minuteHandAngle )/2;
+	    
+	    // Set angle/location depending on setting
+	    switch (complication_location){
+	    	case 0: // rotating
+			    textangle = (hourHandAngle + minuteHandAngle )/2;
+			    if ((hourHandAngle - minuteHandAngle).abs() < Math.PI){ textangle = textangle + Math.PI; } 
+			   	textangle = textangle - Math.PI/2;
+			   	break;
+	    	case 1: // 12 o clock
+	    	    textangle = Math.PI*1.5;
+	    		break;
+	    	case 2: // 3 o clock
+	    		textangle = 0;
+	    		break;
+	    	case 3: // 6 o clock
+	    	    textangle = Math.PI/2;
+	    		break;
+	    	case 4: // 9 o clock
+	    	    textangle = Math.PI;
+	    		break;
+	    
+	    }
+        var sY = textrad + (textrad - textdist ) * Math.sin(textangle);
+        var sX = textrad + (textrad - textdist ) * Math.cos(textangle);
+	    dc.drawText(sX, sY - 18*scale_to_fenix, Graphics.FONT_TINY, top_complication, Graphics.TEXT_JUSTIFY_CENTER);
+	    dc.drawText(sX, sY + 2*scale_to_fenix, Graphics.FONT_TINY, bottom_complication, Graphics.TEXT_JUSTIFY_CENTER);
+
+	    
+
+		// Use gray to draw the hour and minute hands
+		dc.setColor(Graphics.COLOR_LT_GRAY,Graphics.COLOR_TRANSPARENT);        
         
         // Draw hands
         var minusradius = -10 * scale_to_fenix;
@@ -285,38 +334,13 @@ class SpectreRunmaster3View extends WatchUi.WatchFace {
 			6 * scale_to_fenix,
 			1*scale_to_fenix));
          
-
-
 	    // Center dot
 	    dc.setColor(Graphics.COLOR_LT_GRAY,Graphics.COLOR_TRANSPARENT);
 	    dc.fillCircle(hand_coord_centre, hand_coord_centre, -minusradius + 3 * scale_to_fenix);
 	    dc.setColor(Graphics.COLOR_BLACK,Graphics.COLOR_TRANSPARENT);
 	    dc.drawCircle(hand_coord_centre, hand_coord_centre, -minusradius + 3 * scale_to_fenix);
 	    
-	    
-	    // Complications - get settings value
-    	var param_1_setting = Application.getApp().Properties.getValue("top_complication");
-    	var param_2_setting = Application.getApp().Properties.getValue("bot_complication");
-
-		// Compute the required string and save result
-		var top_complication = getComplicationString(param_1_setting);
-		var bottom_complication = getComplicationString(param_2_setting);
 	
-	    
-	    // Compute location for date - average angle of hour/minute - PI
-	    dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
-	    var textrad = hand_coord_centre;
-	    var textdist = 87 * scale_to_fenix;
-	    var textangle = (hourHandAngle + minuteHandAngle )/2;
-	    if ((hourHandAngle - minuteHandAngle).abs() < Math.PI){ textangle = textangle + Math.PI; } 
-	    
-	    textangle = textangle - Math.PI/2;
-        var sY = textrad + (textrad - textdist ) * Math.sin(textangle);
-        var sX = textrad + (textrad - textdist ) * Math.cos(textangle);
-	    dc.drawText(sX, sY - 18*scale_to_fenix, Graphics.FONT_TINY, top_complication, Graphics.TEXT_JUSTIFY_CENTER);
-	    dc.drawText(sX, sY + 2*scale_to_fenix, Graphics.FONT_TINY, bottom_complication, Graphics.TEXT_JUSTIFY_CENTER);
-
-	    
 	    //onPartialUpdate(dc, minusradius); // Allows for second-hand creation later on
     }
     
