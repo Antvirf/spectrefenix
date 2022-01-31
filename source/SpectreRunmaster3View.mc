@@ -334,15 +334,82 @@ class SpectreRunmaster3View extends WatchUi.WatchFace {
 			6 * scale_to_fenix,
 			1*scale_to_fenix));
          
+	    //onPartialUpdate(dc, minusradius, scale_to_fenix); // Allows for second-hand creation later on
+	   	
+	   	if (Application.getApp().Properties.getValue("secondshand")) {
+		   	var secondAngle = System.getClockTime().sec;
+	        secondAngle = secondAngle * Math.PI / 30 - Math.PI/2;
+	
+	        var secrad = 130 * scale_to_fenix;
+	        var secballrad = 8 * scale_to_fenix;
+	        var reduction_var = (secrad - secballrad - 4 * scale_to_fenix);
+	        var Y = secrad + reduction_var * Math.sin(secondAngle);
+	        var X = secrad + reduction_var * Math.cos(secondAngle);
+	        
+	        
+	        // Drawing the hand
+	        dc.setColor(Graphics.COLOR_LT_GRAY,Graphics.COLOR_TRANSPARENT);
+	        dc.fillPolygon(generateHandCoordinates(
+	        		[
+	        		secrad,
+	        		secrad
+	        		],
+	        	secondAngle + Math.PI/2,
+	        	secrad - secballrad - 2 * scale_to_fenix,
+	        	0, 
+	        	2 * scale_to_fenix, 
+	        	2 * scale_to_fenix));
+	        
+	        // Drawing the second ball
+		    dc.fillCircle(X, Y, secballrad);
+		    dc.setColor(Graphics.COLOR_ORANGE,Graphics.COLOR_TRANSPARENT);
+		    dc.fillCircle(X, Y, secballrad - 3 * scale_to_fenix);
+	    }
+	    
+	    
 	    // Center dot
 	    dc.setColor(Graphics.COLOR_LT_GRAY,Graphics.COLOR_TRANSPARENT);
 	    dc.fillCircle(hand_coord_centre, hand_coord_centre, -minusradius + 3 * scale_to_fenix);
 	    dc.setColor(Graphics.COLOR_BLACK,Graphics.COLOR_TRANSPARENT);
 	    dc.drawCircle(hand_coord_centre, hand_coord_centre, -minusradius + 3 * scale_to_fenix);
 	    
-	
-	    //onPartialUpdate(dc, minusradius); // Allows for second-hand creation later on
+	    
+	    
     }
+    
+    // Seconds hand
+   	function onPartialUpdatePLACEHOLDER(dc as Dc, minusradius as Number, scale_to_fenix as Number) as Void {
+	   	var secondAngle = System.getClockTime().sec;
+	   	
+        System.println(secondAngle);
+        secondAngle = secondAngle * Math.PI / 30 - Math.PI/2;
+
+        var secrad = 130 * scale_to_fenix;
+        var secballrad = 8 * scale_to_fenix;
+        var reduction_var = (secrad - secballrad - 4 * scale_to_fenix);
+        var Y = secrad + reduction_var * Math.sin(secondAngle);
+        var X = secrad + reduction_var * Math.cos(secondAngle);
+        
+        
+        // Drawing the hand
+        dc.setColor(Graphics.COLOR_LT_GRAY,Graphics.COLOR_TRANSPARENT);
+        dc.fillPolygon(generateHandCoordinates(
+        		[
+        		secrad,
+        		secrad
+        		],
+        	secondAngle + Math.PI/2,
+        	secrad - secballrad - 2 * scale_to_fenix,
+        	0, 
+        	2 * scale_to_fenix, 
+        	2 * scale_to_fenix));
+        
+        // Drawing the second ball
+	    dc.fillCircle(X, Y, secballrad);
+	    dc.setColor(Graphics.COLOR_ORANGE,Graphics.COLOR_TRANSPARENT);
+	    dc.fillCircle(X, Y, secballrad - 3 * scale_to_fenix);
+    }
+    
     
     // Called when this View is removed from the screen. Save the
     // state of this View here. This includes freeing resources from

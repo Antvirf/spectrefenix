@@ -5,6 +5,7 @@
 	<property id="bot_complication" type="number">1</property>
 	<property id="complication_location" type="number">0</property>
 	<property id="top_numeric" type="number">0</property>
+	<property id="secondshand" type="boolean">true</property>
 </properties>
 
 <strings>
@@ -24,6 +25,7 @@
 	<string id="top_symbol_numeric">Numeric 12</string>
 	<string id="top_symbol_triangle">Flieger-style triangle</string>
 	<string id="top_symbol_title">12 o'clock indicator</string>
+	<string id="seconds_title">Enable or disable seconds hand</string>
 </strings>
 
 <settings>
@@ -32,6 +34,10 @@
 			<listEntry value="0">@Strings.top_symbol_triangle</listEntry>
 			<listEntry value="1">@Strings.top_symbol_numeric</listEntry>
 		</settingConfig>
+	</setting>
+
+	<setting propertyKey="@Properties.secondshand" title="@Strings.seconds_title">
+		<settingConfig type="boolean" />
 	</setting>
 
 	<setting propertyKey="@Properties.complication_location" title="@Strings.complication_title_location">
