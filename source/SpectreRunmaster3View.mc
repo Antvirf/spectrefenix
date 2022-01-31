@@ -83,25 +83,27 @@ class SpectreRunmaster3View extends WatchUi.WatchFace {
 		dc.drawText(distfromside, width/2, Graphics.FONT_NUMBER_MILD, 9, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
 
 		
-		var draw_triangle = true;
-		if (draw_triangle){
-			// Creating the pilot triangle at the top
-			var triangle_width = 18 * scale_to_fenix;
-			var triangle_height = 28 * scale_to_fenix;
-			var triangle_spacer = -14 * scale_to_fenix;
-			var triangle_eye_rad = 5 * scale_to_fenix;
-			
-			dc.fillPolygon([
-				[width/2, distfromside + triangle_spacer],
-				[width/2 - triangle_width, distfromside + triangle_spacer + triangle_height],
-				[width/2 + triangle_width, distfromside + triangle_spacer + triangle_height]
-				]);
+		var top_indicator = Application.getApp().Properties.getValue("top_numeric");
+		switch (top_indicator){
+			case 0:
+				// Creating the pilot triangle at the top
+				var triangle_width = 18 * scale_to_fenix;
+				var triangle_height = 28 * scale_to_fenix;
+				var triangle_spacer = -14 * scale_to_fenix;
+				var triangle_eye_rad = 5 * scale_to_fenix;
 				
-		    dc.fillCircle(width/2 - triangle_eye_rad - 9*scale_to_fenix, distfromside + triangle_spacer + 3, triangle_eye_rad);
-		    dc.fillCircle(width/2 + triangle_eye_rad + 9*scale_to_fenix, distfromside + triangle_spacer + 3, triangle_eye_rad);
-		}
-		else{
-			dc.drawText(width/2, distfromside, Graphics.FONT_NUMBER_MILD, 12, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+				dc.fillPolygon([
+					[width/2, distfromside + triangle_spacer],
+					[width/2 - triangle_width, distfromside + triangle_spacer + triangle_height],
+					[width/2 + triangle_width, distfromside + triangle_spacer + triangle_height]
+					]);
+					
+			    dc.fillCircle(width/2 - triangle_eye_rad - 9*scale_to_fenix, distfromside + triangle_spacer + 3, triangle_eye_rad);
+			    dc.fillCircle(width/2 + triangle_eye_rad + 9*scale_to_fenix, distfromside + triangle_spacer + 3, triangle_eye_rad);
+				break;
+			case 1:
+				dc.drawText(width/2, distfromside, Graphics.FONT_NUMBER_MILD, 12, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+				break;
 		}
 		
     }

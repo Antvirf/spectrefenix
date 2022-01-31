@@ -4,6 +4,7 @@
 	<property id="top_complication" type="number">0</property>
 	<property id="bot_complication" type="number">1</property>
 	<property id="complication_location" type="number">0</property>
+	<property id="top_numeric" type="number">0</property>
 </properties>
 
 <strings>
@@ -20,9 +21,19 @@
 	<string id="three">3 o'clock</string>
 	<string id="six">6 o'clock</string>
 	<string id="nine">9 o'clock</string>
+	<string id="top_symbol_numeric">Numeric 12</string>
+	<string id="top_symbol_triangle">Flieger-style triangle</string>
+	<string id="top_symbol_title">12 o'clock indicator</string>
 </strings>
 
 <settings>
+	<setting propertyKey="@Properties.top_numeric" title="@Strings.top_symbol_title">
+		<settingConfig type="list">
+			<listEntry value="0">@Strings.top_symbol_triangle</listEntry>
+			<listEntry value="1">@Strings.top_symbol_numeric</listEntry>
+		</settingConfig>
+	</setting>
+
 	<setting propertyKey="@Properties.complication_location" title="@Strings.complication_title_location">
 		<settingConfig type="list">
 			<listEntry value="0">@Strings.rotate</listEntry>
