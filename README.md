@@ -6,6 +6,7 @@
 * The date/battery complications are configurable via the Garmin Connect App once the watch face has been installed via the store. Available options for either slot are date, battery %, heart rate, steps, and then ability to leave either one blank.
 * So far tested physically with:
   * Fenix 6 Pro / Sapphire
+  * Fenix 7S Sapphire Solar
   * Forerunner 935
   * Venu 2
 
