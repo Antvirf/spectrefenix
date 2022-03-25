@@ -5,6 +5,7 @@
 	<property id="bot_complication" type="number">1</property>
 	<property id="complication_location" type="number">0</property>
 	<property id="top_numeric" type="number">0</property>
+	<property id="date_format" type="number">0</property>
 </properties>
 
 <strings>
@@ -24,6 +25,9 @@
 	<string id="top_symbol_numeric">Numeric 12</string>
 	<string id="top_symbol_triangle">Flieger-style triangle</string>
 	<string id="top_symbol_title">12 o'clock indicator</string>
+	<string id="date_format_title">Date format</string>
+	<string id="date_format_ddmm">dd/mm: 31/12</string>
+	<string id="date_format_mmdd">mm/dd: 12/31</string>
 </strings>
 
 <settings>
@@ -31,6 +35,13 @@
 		<settingConfig type="list">
 			<listEntry value="0">@Strings.top_symbol_triangle</listEntry>
 			<listEntry value="1">@Strings.top_symbol_numeric</listEntry>
+		</settingConfig>
+	</setting>
+
+	<setting propertyKey="@Properties.date_format" title="@Strings.date_format_title">
+		<settingConfig type="list">
+			<listEntry value="0">@Strings.date_format_ddmm</listEntry>
+			<listEntry value="1">@Strings.date_format_mmdd</listEntry>
 		</settingConfig>
 	</setting>
 

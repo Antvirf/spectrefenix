@@ -171,10 +171,21 @@ class SpectreRunmaster3View extends WatchUi.WatchFace {
    
 	// Solve complication
 	function getComplicationString(input_string as String) as String {
+		var dateStr = "";
+		var info = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
+		
 		switch (input_string){
 			case 0: // date
-		        var info = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
-	    		var dateStr = Lang.format("$1$/$2$", [info.day, info.month]);
+				var date_format = Application.getApp().Properties.getValue("date_format");
+		        switch (date_format){
+		        	case 0:
+		        		dateStr = Lang.format("$1$/$2$", [info.day, info.month]);
+		        		break;
+		        	case 1:
+		        		dateStr = Lang.format("$1$/$2$", [info.month, info.day]);
+		        		break;
+		        }
+		        
 	    		var dateView = View.findDrawableById("DateDisplay") as Text;
 	    		return dateStr;
 	    		break;
@@ -248,6 +259,7 @@ class SpectreRunmaster3View extends WatchUi.WatchFace {
     	var param_1_setting = Application.getApp().Properties.getValue("top_complication");
     	var param_2_setting = Application.getApp().Properties.getValue("bot_complication");
     	var complication_location = Application.getApp().Properties.getValue("complication_location");
+    	var date_format = Application.getApp().Properties.getValue("date_format");
 
 		// Compute the required string and save result
 		var top_complication = getComplicationString(param_1_setting);
