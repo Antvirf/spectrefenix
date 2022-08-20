@@ -1,6 +1,6 @@
 # Spectre "Runmaster"
+![downloads](./badges/downloads.svg) ![rating](./badges/rating.svg)
 ## 007 Spectre Omega Speedmaster style watchface
-
 
 * With date and battery indicator that move with the hands - always being on the opposite side for readability (or can be locked to 12/3/6/9 o'clock in the settings)
 * The date/battery complications are configurable via the Garmin Connect App once the watch face has been installed via the store. Available options for either slot are date, battery %, heart rate, steps, and then ability to leave either one blank.
