@@ -16,7 +16,7 @@
 If you want to directly use the watchface, please head to the [Connect IQ page](https://apps.garmin.com/en-US/apps/904f5de7-2dc6-456f-9f5d-fc81dd47c53e)
 
 ## Source code
-This repository contains the full Eclipse project for this watch face
+This repository contains the full project for this watch face
 
 
 ## Images
