@@ -235,6 +235,10 @@ class SpectreRunmaster3View extends WatchUi.WatchFace {
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
 
+		// Enable anti-aliasing, if available
+		if(dc has :setAntiAlias) {
+			dc.setAntiAlias(true);
+		}
 
 		// Draw the tick marks around the edges of the screen
 		dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
